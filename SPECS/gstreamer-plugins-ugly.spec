@@ -11,7 +11,7 @@
 Summary: GStreamer streaming media framework "ugly" plug-ins
 Name: gstreamer-plugins-ugly
 Version: 0.10.19
-Release: 17%{?dist}
+Release: 18%{?dist}
 License: LGPLv2+
 Group: Applications/Multimedia
 URL: http://gstreamer.freedesktop.org/
@@ -81,8 +81,8 @@ be shipped in gstreamer-plugins-good because:
 
 %build
 %configure \
-    --with-package-name="gst-plugins-ugly rpmfusion rpm" \
-    --with-package-origin="http://rpmfusion.org/" \
+    --with-package-name="DeskOS GStreamer-plugins-ugly package" \
+    --with-package-origin="https://deskosproject.org/" \
     --enable-debug --enable-gtk-doc \
     --disable-static
 %{__make} %{?_smp_mflags}
@@ -128,6 +128,9 @@ be shipped in gstreamer-plugins-good because:
 
 
 %changelog
+* Thu Nov 17 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.10.19-18
+- Rebuilt for DeskOS
+
 * Sat Mar 22 2014 Sérgio Basto <sergio@serjux.com> - 0.10.19-17
 - Rebuilt for x264
 
